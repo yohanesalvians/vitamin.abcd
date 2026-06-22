@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamin Business Monitoring</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(-2px);
+        }
+
+        .btn-full {
+            grid-column: 1 / -1;
+        }
+
+        .btn.google-drive {
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+        }
+
+        .btn.google-drive:hover {
+            box-shadow: 0 8px 25px rgba(66, 133, 244, 0.6);
+        }
+
+        .btn.spreadsheet {
+            background: linear-gradient(135deg, #0f9d58 0%, #16a34a 100%);
+            box-shadow: 0 4px 15px rgba(15, 157, 88, 0.4);
+        }
+
+        .btn.spreadsheet:hover {
+            box-shadow: 0 8px 25px rgba(15, 157, 88, 0.6);
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .buttons-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-full {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥗 Vitamin Business Monitoring</h1>
+            <p>Quick access to all business resources</p>
+        </div>
+
+        <div class="buttons-grid">
+            <a href="https://drive.google.com/drive/folders/1vp0XcZUZ5aKb3g73Vx37zhDItVUrOsWi?usp=drive_link" class="btn google-drive" target="_blank">
+                📁 Google Drive Folder
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1DO6rzWs7os-dfDH5_Iifcgw9ZT_cBnyPCsEMOMxZvpA/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
+                📊 Inventory
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1D3H_Sn5Xjmasirlw6YjSlCJppCMgBNY0?usp=drive_link" class="btn google-drive" target="_blank">
+                🚚 Logistic
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1bkMFq5igWu7aw0aV9wwMkNEqpAg5W8PjM4xCJlfUPAM/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
+                💰 Sales & Finance
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1vnEefotr1Tjtc5gbLQFv9Mo_PFzxC2am0Yi-qkLbqAQ/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
+                🎯 Simulation & Target
+            </a>
+
+            <a href="https://docs.google.com/spreadsheets/d/1JF6WjNp8rhS_2ZIphwMyFX731XQGg1DorMpt7olpLlE/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
+                💵 Tracking Petty Cash
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Last updated: June 2026</p>
+        </div>
+    </div>
+</body>
+</html>
