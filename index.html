@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e8dff5 0%, #f5e6f0 100%);
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,12 +22,13 @@
         }
 
         .container {
-            background: #fafaf8;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            background: #1a1f2e;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
             padding: 50px;
             max-width: 600px;
             width: 100%;
+            border: 1px solid #2d3748;
         }
 
         .header {
@@ -36,18 +37,16 @@
         }
 
         .header h1 {
-            color: #6b7280;
+            color: #e5e7eb;
             font-size: 2.5em;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #a78bcc 0%, #c9b0d9 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-weight: 600;
+            letter-spacing: -0.5px;
         }
 
         .header p {
             color: #9ca3af;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         .buttons-grid {
@@ -61,26 +60,27 @@
             display: block;
             padding: 20px;
             text-decoration: none;
-            background: linear-gradient(135deg, #d4c5e2 0%, #ddd0e8 100%);
-            color: #5a6370;
-            border-radius: 12px;
+            background: #2d3748;
+            color: #e5e7eb;
+            border-radius: 10px;
             text-align: center;
-            font-weight: 600;
-            font-size: 1em;
+            font-weight: 500;
+            font-size: 0.95em;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(167, 139, 204, 0.15);
-            border: 1px solid rgba(167, 139, 204, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid #3f4758;
             cursor: pointer;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            background: linear-gradient(135deg, #c9b8db 0%, #d2c6e0 100%);
-            box-shadow: 0 8px 25px rgba(167, 139, 204, 0.25);
+            transform: translateY(-2px);
+            background: #3d4658;
+            border-color: #4f5f7f;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
 
         .btn:active {
-            transform: translateY(-1px);
+            transform: translateY(0);
         }
 
         .btn-full {
@@ -88,34 +88,32 @@
         }
 
         .btn.google-drive {
-            background: linear-gradient(135deg, #c8d7e8 0%, #d4dfe8 100%);
-            box-shadow: 0 4px 15px rgba(134, 155, 189, 0.15);
-            border-color: rgba(134, 155, 189, 0.2);
+            background: #2a3a4a;
+            border-color: #3a4a5a;
         }
 
         .btn.google-drive:hover {
-            background: linear-gradient(135deg, #bccfe5 0%, #c9d8e2 100%);
-            box-shadow: 0 8px 25px rgba(134, 155, 189, 0.25);
+            background: #3a4a5a;
+            border-color: #4a5a7a;
         }
 
         .btn.spreadsheet {
-            background: linear-gradient(135deg, #d1dcc8 0%, #dbe6d0 100%);
-            box-shadow: 0 4px 15px rgba(144, 169, 124, 0.15);
-            border-color: rgba(144, 169, 124, 0.2);
+            background: #2d3a2a;
+            border-color: #3d4a3a;
         }
 
         .btn.spreadsheet:hover {
-            background: linear-gradient(135deg, #c8d4bd 0%, #d4dfc8 100%);
-            box-shadow: 0 8px 25px rgba(144, 169, 124, 0.25);
+            background: #3d4a3a;
+            border-color: #4d5a4a;
         }
 
         .footer {
             text-align: center;
-            color: #d1d5db;
-            font-size: 0.9em;
+            color: #6b7280;
+            font-size: 0.85em;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #2d3748;
         }
 
         @media (max-width: 600px) {
@@ -140,33 +138,33 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🥗 Vitamin Business Monitoring</h1>
+            <h1>Vitamin Business Monitoring</h1>
             <p>Quick access to all business resources</p>
         </div>
 
         <div class="buttons-grid">
             <a href="https://drive.google.com/drive/folders/1vp0XcZUZ5aKb3g73Vx37zhDItVUrOsWi?usp=drive_link" class="btn google-drive" target="_blank">
-                📁 Google Drive Folder
+                Google Drive Folder
             </a>
 
             <a href="https://docs.google.com/spreadsheets/d/1DO6rzWs7os-dfDH5_Iifcgw9ZT_cBnyPCsEMOMxZvpA/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
-                📊 Inventory
+                Inventory
             </a>
 
             <a href="https://drive.google.com/drive/folders/1D3H_Sn5Xjmasirlw6YjSlCJppCMgBNY0?usp=drive_link" class="btn google-drive" target="_blank">
-                🚚 Logistic
+                Logistic
             </a>
 
             <a href="https://docs.google.com/spreadsheets/d/1bkMFq5igWu7aw0aV9wwMkNEqpAg5W8PjM4xCJlfUPAM/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
-                💰 Sales & Finance
+                Sales & Finance
             </a>
 
             <a href="https://docs.google.com/spreadsheets/d/1vnEefotr1Tjtc5gbLQFv9Mo_PFzxC2am0Yi-qkLbqAQ/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
-                🎯 Simulation & Target
+                Simulation & Target
             </a>
 
             <a href="https://docs.google.com/spreadsheets/d/1JF6WjNp8rhS_2ZIphwMyFX731XQGg1DorMpt7olpLlE/edit?usp=drive_link" class="btn spreadsheet" target="_blank">
-                💵 Tracking Petty Cash
+                Tracking Petty Cash
             </a>
         </div>
 
