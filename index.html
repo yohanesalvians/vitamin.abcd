@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #e8dff5 0%, #f5e6f0 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,9 +22,9 @@
         }
 
         .container {
-            background: white;
+            background: #fafaf8;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
             padding: 50px;
             max-width: 600px;
             width: 100%;
@@ -36,17 +36,17 @@
         }
 
         .header h1 {
-            color: #333;
+            color: #6b7280;
             font-size: 2.5em;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #a78bcc 0%, #c9b0d9 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .header p {
-            color: #666;
+            color: #9ca3af;
             font-size: 1.1em;
         }
 
@@ -61,25 +61,26 @@
             display: block;
             padding: 20px;
             text-decoration: none;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #d4c5e2 0%, #ddd0e8 100%);
+            color: #5a6370;
             border-radius: 12px;
             text-align: center;
             font-weight: 600;
             font-size: 1em;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-            border: none;
+            box-shadow: 0 4px 15px rgba(167, 139, 204, 0.15);
+            border: 1px solid rgba(167, 139, 204, 0.2);
             cursor: pointer;
         }
 
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #c9b8db 0%, #d2c6e0 100%);
+            box-shadow: 0 8px 25px rgba(167, 139, 204, 0.25);
         }
 
         .btn:active {
-            transform: translateY(-2px);
+            transform: translateY(-1px);
         }
 
         .btn-full {
@@ -87,30 +88,34 @@
         }
 
         .btn.google-drive {
-            background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
-            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+            background: linear-gradient(135deg, #c8d7e8 0%, #d4dfe8 100%);
+            box-shadow: 0 4px 15px rgba(134, 155, 189, 0.15);
+            border-color: rgba(134, 155, 189, 0.2);
         }
 
         .btn.google-drive:hover {
-            box-shadow: 0 8px 25px rgba(66, 133, 244, 0.6);
+            background: linear-gradient(135deg, #bccfe5 0%, #c9d8e2 100%);
+            box-shadow: 0 8px 25px rgba(134, 155, 189, 0.25);
         }
 
         .btn.spreadsheet {
-            background: linear-gradient(135deg, #0f9d58 0%, #16a34a 100%);
-            box-shadow: 0 4px 15px rgba(15, 157, 88, 0.4);
+            background: linear-gradient(135deg, #d1dcc8 0%, #dbe6d0 100%);
+            box-shadow: 0 4px 15px rgba(144, 169, 124, 0.15);
+            border-color: rgba(144, 169, 124, 0.2);
         }
 
         .btn.spreadsheet:hover {
-            box-shadow: 0 8px 25px rgba(15, 157, 88, 0.6);
+            background: linear-gradient(135deg, #c8d4bd 0%, #d4dfc8 100%);
+            box-shadow: 0 8px 25px rgba(144, 169, 124, 0.25);
         }
 
         .footer {
             text-align: center;
-            color: #999;
+            color: #d1d5db;
             font-size: 0.9em;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #e5e7eb;
         }
 
         @media (max-width: 600px) {
